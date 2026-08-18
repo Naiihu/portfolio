@@ -1,0 +1,12 @@
+path {
+    fill: white;
+
+    &:nth-of-type(n+4) {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+
+        &.showLarge {
+            opacity: 1;
+        }
+    }
+}

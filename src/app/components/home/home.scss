@@ -1,0 +1,12 @@
+section#home {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+
+    app-theme-switcher {
+        position: absolute;
+        top: 0;
+        right: 5dvw;
+    }
+}

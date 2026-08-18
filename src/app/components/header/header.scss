@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+    padding: 1dvh 2dvw;
+
+    box-shadow: 0 2px 20px -7px black;
+    border-radius: 0 0 10px 10px;
+
+    svg {
+        max-height: 80%;
+        cursor: pointer;
+    }
+
+    .links {
+        app-svg-icons {
+            height: 2rem;
+            width: 2rem;
+            display: block;
+        }
+    }
+}

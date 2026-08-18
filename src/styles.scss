@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    &.light {
+        --background-color: #f5f3eb;
+        --main-color: oklch(from var(--background-color) 0 c h);
+        --main-opposite-color: oklch(from var(--main-color) calc(l + 0.2) c h);
+    }
+
+    &.dark {
+        --background-color: #2e2e2e;
+        --main-color: oklch(from var(--background-color) 1 c h);
+        --main-opposite-color: oklch(from var(--main-color) calc(l - 0.2) c h);
+    }
+
+    --secondary-color: #fdad17;
+    --default-vertical-padding: 1dvh;
+    --default-horizontal-padding: 1dvw;
+}
+
+@font-face {
+    font-family: 'Kavivanar';
+    src: 'fonts/Kavivanar/Kavivanar-Regular.woff' format('woff'),
+        'fonts/Kavivanar/Kavivanar-Regular.woff2' format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto-condensed';
+    src: url('/assets/fonts/Roboto-condensed/RobotoCondensed-VariableFont_wght.woff') format('woff'),
+         url('/assets/fonts/Roboto-condensed/RobotoCondensed-VariableFont_wght.woff2') format('woff2');
+}
+
+html, body {
+    margin: 0;
+    height: 100dvh;
+    width: 100dvw;
+
+    scrollbar-color: transparent transparent;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #003079;
+}
