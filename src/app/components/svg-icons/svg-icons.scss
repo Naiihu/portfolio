@@ -6,16 +6,16 @@ svg {
     }
 
     & use::part(fill) {
-        fill: var(--main-color);
+        fill: var(--icon-color);
     }
 
     & use::part(stroke) {
-        stroke: var(--main-color);
+        stroke: var(--icon-color);
         fill: none;
     }
 
     & use::part(stroke)::part(fill) {
-        fill: var(--main-color);
-        stroke: var(--main-color);
+        fill: var(--icon-color);
+        stroke: var(--icon-color);
     }
 }

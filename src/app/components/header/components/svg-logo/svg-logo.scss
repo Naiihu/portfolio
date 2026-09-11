@@ -1,5 +1,5 @@
 path {
-    fill: white;
+    fill: var(--icon-color);
 
     &:nth-of-type(n+4) {
         opacity: 0;

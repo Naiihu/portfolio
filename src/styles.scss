@@ -1,14 +1,14 @@
 :root {
     &.light {
-        --background-color: #f5f3eb;
-        --main-color: oklch(from var(--background-color) 0 c h);
-        --main-opposite-color: oklch(from var(--main-color) calc(l + 0.2) c h);
+        --background-color: #579aff;
+        --font-color: #E8DCCA;
+        --icon-color: #000000;
     }
 
     &.dark {
-        --background-color: #2e2e2e;
-        --main-color: oklch(from var(--background-color) 1 c h);
-        --main-opposite-color: oklch(from var(--main-color) calc(l - 0.2) c h);
+        --background-color: #003079;
+        --font-color: #E8DCCA;
+        --icon-color: #ffffff;
     }
 
     --secondary-color: #fdad17;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Kavivanar';
-    src: 'fonts/Kavivanar/Kavivanar-Regular.woff' format('woff'),
-        'fonts/Kavivanar/Kavivanar-Regular.woff2' format('woff2');
+    src: url('/assets/fonts/Kavivanar/Kavivanar-Regular.woff') format('woff'),
+        url('/assets/fonts/Kavivanar/Kavivanar-Regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -41,5 +41,5 @@ html, body {
 }
 
 body {
-    background-color: #003079;
+    background-color: var(--background-color);
 }
